@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 
 htmlRoutes(app)
 
+app.use("/", express.static("app/public"))
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
